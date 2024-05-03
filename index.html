@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haveli Floor project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading_container">Haveli Floor Tracker</h1>
+    <table>
+        <tr>
+            <td>Table No.</td>
+            <td><h4>Guest Name</h4></td>
+            <td><h4>Drinks Status</h4></td>
+            <td><h4>Starters Status</h4></td>
+            <td><h4>Mains Status</h4></td>
+            <td><h4>Desserts Status</h4></td>
+            <td><h4>Tea/Coffee Status</h4></td>
+            <td><h4>Check Status</h4></td>
+            <td><h4>Extra Notes</h4></td>
+            <td><h4>Button Status</h4></td>
+        </tr>
+        <tr>
+            <td>Table 1</td>
+            <td><input type="text" id="guest_name_table_id_1" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_1"></h4></td>
+            <td><h4 id="starter_table_id_1"></h4></td>
+            <td><h4 id="main_table_id_1"></h4></td>
+            <td><h4 id="dessert_table_id_1"></h4></td>
+            <td><h4 id="tea_table_id_1"></h4></td>
+            <td><h4 id="check_table_id_1"></h4></td>
+            <td><textarea id="notes_table_id_1"></textarea></td>
+            <td>1
+                <Button id="btn_start_table_id_1" onclick="btn_start_table_1()">Start</Button>
+                <Button id="btn_clear_table_id_1" onclick="btn_clear_table_1()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 2</td>
+            <td><input type="text" id="guest_name_table_id_2" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_2"></h4></td>
+            <td><h4 id="starter_table_id_2"></h4></td>
+            <td><h4 id="main_table_id_2"></h4></td>
+            <td><h4 id="dessert_table_id_2"></h4></td>
+            <td><h4 id="tea_table_id_2"></h4></td>
+            <td><h4 id="check_table_id_2"></h4></td>
+            <td><textarea id="notes_table_id_2"></textarea></td>
+            <td>2
+                <Button id="btn_start_table_id_2" onclick="btn_start_table_2()">Start</Button>
+                <Button id="btn_clear_table_id_2" onclick="btn_clear_table_2()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 3</td>
+            <td><input type="text" id="guest_name_table_id_3" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_3"></h4></td>
+            <td><h4 id="starter_table_id_3"></h4></td>
+            <td><h4 id="main_table_id_3"></h4></td>
+            <td><h4 id="dessert_table_id_3"></h4></td>
+            <td><h4 id="tea_table_id_3"></h4></td>
+            <td><h4 id="check_table_id_3"></h4></td>
+            <td><textarea id="notes_table_id_3"></textarea></td>
+            <td>3
+                <Button id="btn_start_table_id_3" onclick="btn_start_table_3()">Start</Button>
+                <Button id="btn_clear_table_id_3" onclick="btn_clear_table_3()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 4</td>
+            <td><input type="text" id="guest_name_table_id_4" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_4"></h4></td>
+            <td><h4 id="starter_table_id_4"></h4></td>
+            <td><h4 id="main_table_id_4"></h4></td>
+            <td><h4 id="dessert_table_id_4"></h4></td>
+            <td><h4 id="tea_table_id_4"></h4></td>
+            <td><h4 id="check_table_id_4"></h4></td>
+            <td><textarea id="notes_table_id_4"></textarea></td>
+            <td>4
+                <Button id="btn_start_table_id_4" onclick="btn_start_table_4()">Start</Button>
+                <Button id="btn_clear_table_id_4" onclick="btn_clear_table_4()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 5</td>
+            <td><input type="text" id="guest_name_table_id_5" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_5"></h4></td>
+            <td><h4 id="starter_table_id_5"></h4></td>
+            <td><h4 id="main_table_id_5"></h4></td>
+            <td><h4 id="dessert_table_id_5"></h4></td>
+            <td><h4 id="tea_table_id_5"></h4></td>
+            <td><h4 id="check_table_id_5"></h4></td>
+            <td><textarea id="notes_table_id_5"></textarea></td>
+            <td>5
+                <Button id="btn_start_table_id_5" onclick="btn_start_table_5()">Start</Button>
+                <Button id="btn_clear_table_id_5" onclick="btn_clear_table_5()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 6</td>
+            <td><input type="text" id="guest_name_table_id_6" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_6"></h4></td>
+            <td><h4 id="starter_table_id_6"></h4></td>
+            <td><h4 id="main_table_id_6"></h4></td>
+            <td><h4 id="dessert_table_id_6"></h4></td>
+            <td><h4 id="tea_table_id_6"></h4></td>
+            <td><h4 id="check_table_id_6"></h4></td>
+            <td><textarea id="notes_table_id_6"></textarea></td>
+            <td>6
+                <Button id="btn_start_table_id_6" onclick="btn_start_table_6()">Start</Button>
+                <Button id="btn_clear_table_id_6" onclick="btn_clear_table_6()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 7</td>
+            <td><input type="text" id="guest_name_table_id_7" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_7"></h4></td>
+            <td><h4 id="starter_table_id_7"></h4></td>
+            <td><h4 id="main_table_id_7"></h4></td>
+            <td><h4 id="dessert_table_id_7"></h4></td>
+            <td><h4 id="tea_table_id_7"></h4></td>
+            <td><h4 id="check_table_id_7"></h4></td>
+            <td><textarea id="notes_table_id_7"></textarea></td>
+            <td>7
+                <Button id="btn_start_table_id_7" onclick="btn_start_table_7()">Start</Button>
+                <Button id="btn_clear_table_id_7" onclick="btn_clear_table_7()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 8</td>
+            <td><input type="text" id="guest_name_table_id_8" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_8"></h4></td>
+            <td><h4 id="starter_table_id_8"></h4></td>
+            <td><h4 id="main_table_id_8"></h4></td>
+            <td><h4 id="dessert_table_id_8"></h4></td>
+            <td><h4 id="tea_table_id_8"></h4></td>
+            <td><h4 id="check_table_id_8"></h4></td>
+            <td><textarea id="notes_table_id_8"></textarea></td>
+            <td>8
+                <Button id="btn_start_table_id_8" onclick="btn_start_table_8()">Start</Button>
+                <Button id="btn_clear_table_id_8" onclick="btn_clear_table_8()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 9</td>
+            <td><input type="text" id="guest_name_table_id_9" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_9"></h4></td>
+            <td><h4 id="starter_table_id_9"></h4></td>
+            <td><h4 id="main_table_id_9"></h4></td>
+            <td><h4 id="dessert_table_id_9"></h4></td>
+            <td><h4 id="tea_table_id_9"></h4></td>
+            <td><h4 id="check_table_id_9"></h4></td>
+            <td><textarea id="notes_table_id_9"></textarea></td>
+            <td>9
+                <Button id="btn_start_table_id_9" onclick="btn_start_table_9()">Start</Button>
+                <Button id="btn_clear_table_id_9" onclick="btn_clear_table_9()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 10</td>
+            <td><input type="text" id="guest_name_table_id_10" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_10"></h4></td>
+            <td><h4 id="starter_table_id_10"></h4></td>
+            <td><h4 id="main_table_id_10"></h4></td>
+            <td><h4 id="dessert_table_id_10"></h4></td>
+            <td><h4 id="tea_table_id_10"></h4></td>
+            <td><h4 id="check_table_id_10"></h4></td>
+            <td><textarea id="notes_table_id_10"></textarea></td>
+            <td>10
+                <Button id="btn_start_table_id_10" onclick="btn_start_table_10()">Start</Button>
+                <Button id="btn_clear_table_id_10" onclick="btn_clear_table_10()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 11</td>
+            <td><input type="text" id="guest_name_table_id_11" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_11"></h4></td>
+            <td><h4 id="starter_table_id_11"></h4></td>
+            <td><h4 id="main_table_id_11"></h4></td>
+            <td><h4 id="dessert_table_id_11"></h4></td>
+            <td><h4 id="tea_table_id_11"></h4></td>
+            <td><h4 id="check_table_id_11"></h4></td>
+            <td><textarea id="notes_table_id_11"></textarea></td>
+            <td>11
+                <Button id="btn_start_table_id_11" onclick="btn_start_table_11()">Start</Button>
+                <Button id="btn_clear_table_id_11" onclick="btn_clear_table_11()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 12</td>
+            <td><input type="text" id="guest_name_table_id_12" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_12"></h4></td>
+            <td><h4 id="starter_table_id_12"></h4></td>
+            <td><h4 id="main_table_id_12"></h4></td>
+            <td><h4 id="dessert_table_id_12"></h4></td>
+            <td><h4 id="tea_table_id_12"></h4></td>
+            <td><h4 id="check_table_id_12"></h4></td>
+            <td><textarea id="notes_table_id_12"></textarea></td>
+            <td>12
+                <Button id="btn_start_table_id_12" onclick="btn_start_table_12()">Start</Button>
+                <Button id="btn_clear_table_id_12" onclick="btn_clear_table_12()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 13</td>
+            <td><input type="text" id="guest_name_table_id_13" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_13"></h4></td>
+            <td><h4 id="starter_table_id_13"></h4></td>
+            <td><h4 id="main_table_id_13"></h4></td>
+            <td><h4 id="dessert_table_id_13"></h4></td>
+            <td><h4 id="tea_table_id_13"></h4></td>
+            <td><h4 id="check_table_id_13"></h4></td>
+            <td><textarea id="notes_table_id_13"></textarea></td>
+            <td>13
+                <Button id="btn_start_table_id_13" onclick="btn_start_table_13()">Start</Button>
+                <Button id="btn_clear_table_id_13" onclick="btn_clear_table_13()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 14</td>
+            <td><input type="text" id="guest_name_table_id_14" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_14"></h4></td>
+            <td><h4 id="starter_table_id_14"></h4></td>
+            <td><h4 id="main_table_id_14"></h4></td>
+            <td><h4 id="dessert_table_id_14"></h4></td>
+            <td><h4 id="tea_table_id_14"></h4></td>
+            <td><h4 id="check_table_id_14"></h4></td>
+            <td><textarea id="notes_table_id_14"></textarea></td>
+            <td>14
+                <Button id="btn_start_table_id_14" onclick="btn_start_table_14()">Start</Button>
+                <Button id="btn_clear_table_id_14" onclick="btn_clear_table_14()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 15</td>
+            <td><input type="text" id="guest_name_table_id_15" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_15"></h4></td>
+            <td><h4 id="starter_table_id_15"></h4></td>
+            <td><h4 id="main_table_id_15"></h4></td>
+            <td><h4 id="dessert_table_id_15"></h4></td>
+            <td><h4 id="tea_table_id_15"></h4></td>
+            <td><h4 id="check_table_id_15"></h4></td>
+            <td><textarea id="notes_table_id_15"></textarea></td>
+            <td>15
+                <Button id="btn_start_table_id_15" onclick="btn_start_table_15()">Start</Button>
+                <Button id="btn_clear_table_id_15" onclick="btn_clear_table_15()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 16</td>
+            <td><input type="text" id="guest_name_table_id_16" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_16"></h4></td>
+            <td><h4 id="starter_table_id_16"></h4></td>
+            <td><h4 id="main_table_id_16"></h4></td>
+            <td><h4 id="dessert_table_id_16"></h4></td>
+            <td><h4 id="tea_table_id_16"></h4></td>
+            <td><h4 id="check_table_id_16"></h4></td>
+            <td><textarea id="notes_table_id_16"></textarea></td>
+            <td>16
+                <Button id="btn_start_table_id_16" onclick="btn_start_table_16()">Start</Button>
+                <Button id="btn_clear_table_id_16" onclick="btn_clear_table_16()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 17</td>
+            <td><input type="text" id="guest_name_table_id_17" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_17"></h4></td>
+            <td><h4 id="starter_table_id_17"></h4></td>
+            <td><h4 id="main_table_id_17"></h4></td>
+            <td><h4 id="dessert_table_id_17"></h4></td>
+            <td><h4 id="tea_table_id_17"></h4></td>
+            <td><h4 id="check_table_id_17"></h4></td>
+            <td><textarea id="notes_table_id_17"></textarea></td>
+            <td>17
+                <Button id="btn_start_table_id_17" onclick="btn_start_table_17()">Start</Button>
+                <Button id="btn_clear_table_id_17" onclick="btn_clear_table_17()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 18</td>
+            <td><input type="text" id="guest_name_table_id_18" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_18"></h4></td>
+            <td><h4 id="starter_table_id_18"></h4></td>
+            <td><h4 id="main_table_id_18"></h4></td>
+            <td><h4 id="dessert_table_id_18"></h4></td>
+            <td><h4 id="tea_table_id_18"></h4></td>
+            <td><h4 id="check_table_id_18"></h4></td>
+            <td><textarea id="notes_table_id_18"></textarea></td>
+            <td>18
+                <Button id="btn_start_table_id_18" onclick="btn_start_table_18()">Start</Button>
+                <Button id="btn_clear_table_id_18" onclick="btn_clear_table_18()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 19</td>
+            <td><input type="text" id="guest_name_table_id_19" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_19"></h4></td>
+            <td><h4 id="starter_table_id_19"></h4></td>
+            <td><h4 id="main_table_id_19"></h4></td>
+            <td><h4 id="dessert_table_id_19"></h4></td>
+            <td><h4 id="tea_table_id_19"></h4></td>
+            <td><h4 id="check_table_id_19"></h4></td>
+            <td><textarea id="notes_table_id_19"></textarea></td>
+            <td>19
+                <Button id="btn_start_table_id_19" onclick="btn_start_table_19()">Start</Button>
+                <Button id="btn_clear_table_id_19" onclick="btn_clear_table_19()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 20</td>
+            <td><input type="text" id="guest_name_table_id_20" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_20"></h4></td>
+            <td><h4 id="starter_table_id_20"></h4></td>
+            <td><h4 id="main_table_id_20"></h4></td>
+            <td><h4 id="dessert_table_id_20"></h4></td>
+            <td><h4 id="tea_table_id_20"></h4></td>
+            <td><h4 id="check_table_id_20"></h4></td>
+            <td><textarea id="notes_table_id_20"></textarea></td>
+            <td>20
+                <Button id="btn_start_table_id_20" onclick="btn_start_table_20()">Start</Button>
+                <Button id="btn_clear_table_id_20" onclick="btn_clear_table_20()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 21</td>
+            <td><input type="text" id="guest_name_table_id_21" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_21"></h4></td>
+            <td><h4 id="starter_table_id_21"></h4></td>
+            <td><h4 id="main_table_id_21"></h4></td>
+            <td><h4 id="dessert_table_id_21"></h4></td>
+            <td><h4 id="tea_table_id_21"></h4></td>
+            <td><h4 id="check_table_id_21"></h4></td>
+            <td><textarea id="notes_table_id_21"></textarea></td>
+            <td>21
+                <Button id="btn_start_table_id_21" onclick="btn_start_table_21()">Start</Button>
+                <Button id="btn_clear_table_id_21" onclick="btn_clear_table_21()">Clear</Button>
+            </td>
+        </tr>
+        <tr>
+            <td>Table 22</td>
+            <td><input type="text" id="guest_name_table_id_22" placeholder="Enter Guest Name..."></td>
+            <td><h4 id="drink_table_id_22"></h4></td>
+            <td><h4 id="starter_table_id_22"></h4></td>
+            <td><h4 id="main_table_id_22"></h4></td>
+            <td><h4 id="dessert_table_id_22"></h4></td>
+            <td><h4 id="tea_table_id_22"></h4></td>
+            <td><h4 id="check_table_id_22"></h4></td>
+            <td><textarea id="notes_table_id_22"></textarea></td>
+            <td>22
+                <Button id="btn_start_table_id_22" onclick="btn_start_table_22()">Start</Button>
+                <Button id="btn_clear_table_id_22" onclick="btn_clear_table_22()">Clear</Button>
+            </td>
+        </tr>
+        
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
